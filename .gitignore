@@ -1,0 +1,7 @@
+.vscode
+
+# Markdownlint #
+################
+.markdownlint.json
+.markdownlintignore
+.github
