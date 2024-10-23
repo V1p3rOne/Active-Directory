@@ -1,7 +1,7 @@
 <div align="center">
 
 <div style="text-align: center;">
-  <img src="Assets/01_Logo/Repository-Logo.png" alt="Logo of OnTheSpot" width="80%">
+  <img src="Assets/01_Logo/Repository-Logo.png" alt="AD Home-Lab" width="80%">
 </div>
 
 [![Issues Badge][issues-shield]][issues-url]
