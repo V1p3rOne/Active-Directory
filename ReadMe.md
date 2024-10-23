@@ -1,11 +1,7 @@
 <div align="center">
 
 <div style="text-align: center;">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/01_Logo/Repository-Logo.png">
-    <source media="(prefers-color-scheme: light)" srcset="assets/01_Logo/Repository-Logo.png">
-    <img src="assets/01_Logo/Repository-Logo.png" alt="Logo of OnTheSpot" width="80%">
-  </picture>
+  <img src="assets/01_Logo/Repository-Logo.png" alt="Logo of OnTheSpot" width="80%">
 </div>
 
 [![Issues Badge][issues-shield]][issues-url]
