@@ -20,8 +20,6 @@
    <br>
 </div>
 
-<br>
-
 # Architecture
 
 ''insert image''
@@ -80,11 +78,11 @@ Follow the Parts below step by step to complete your project. You'll start by se
 
 ### Links to Each Part
 
-1. **[`Part 1` Project Setup and Diagram Design](Project/01_Part/)**
-2. **[`Part 2` Installing Virtual Machines](Project/02_Part/)**  
-3. **[`Part 3` Sysmon and Splunk Installation](Project/03_Part/)**  
-4. **[`Part 4` Active Directory Setup](Project/04_Part/)**  
-5. **[`Part 5` Attack Simulation and Telemetry Analysis](Project/05_Part/)**  
+1. **[`Part 1` Project Setup and Diagram Design](Project/Part-1.md/)**
+2. **[`Part 2` Installing Virtual Machines](Project/Part-2.md/)**  
+3. **[`Part 3` Sysmon and Splunk Installation](Project/Part-3.md/)**  
+4. **[`Part 4` Active Directory Setup](Project/Part-4.md/)**  
+5. **[`Part 5` Attack Simulation and Telemetry Analysis](Project/Part-5.md/)**  
 
 ## Our License
 
