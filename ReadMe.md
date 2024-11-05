@@ -20,7 +20,9 @@
    <br>
 </div>
 
-# Architecture
+<div align="center">
+   <h1>Architecture</h1>
+</div>
 
 ![Architecture](Assets/01_Logo/Architecture.png)
 
