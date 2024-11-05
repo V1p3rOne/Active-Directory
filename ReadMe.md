@@ -22,8 +22,7 @@
 
 # Architecture
 
-''insert image''
-
+![Architecture](Assets/01_Logo/Architecture.png)
 
 ## Overview
 
