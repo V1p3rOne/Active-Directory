@@ -1,6 +1,8 @@
 # `Part 1` Project Overview and Diagram Design
 
-In `Part 1` of the **Active Directory Project**, we’re laying the groundwork by designing a **network diagram** for our lab environment. This setup will prepare us for installing Active Directory, Splunk, and Windows machines in later parts. By the end of this section, you'll have a clear, organized diagram representing how all components in our lab will connect and interact.
+In **`Part 1`** of the **Active Directory Project**, we’re laying the groundwork by designing a **network diagram** for our lab environment. This setup will prepare us for installing Active Directory, Splunk, and Windows machines in later parts.
+
+By the end of this section, you'll have a clear, organized diagram representing how all components in our lab will connect and interact.
 
 ### Project Goals
 
@@ -8,7 +10,7 @@ In `Part 1` of the **Active Directory Project**, we’re laying the groundwork b
 2. **Gain practical experience** with Active Directory, Splunk, and networked Windows clients.
 3. **Develop a visual representation** of network data flow and relationships for interview readiness.
 
----
+<br>
 
 ## `Step 1` Setting Up the Diagram
 
@@ -24,7 +26,7 @@ In `Part 1` of the **Active Directory Project**, we’re laying the groundwork b
 ### Diagram Components
 
 - **Active Directory Server**  
-  - IP: `192.168.10.0`  
+  - IP: `192.168.10.7`  
   - Includes **Sysmon** and **Splunk Universal Forwarder** for data collection.
 
 - **Splunk Server**  
@@ -36,10 +38,10 @@ In `Part 1` of the **Active Directory Project**, we’re laying the groundwork b
   - Configured with **Sysmon**, **Splunk Universal Forwarder**, and **Atomic Red Team** for simulated attack testing.
 
 - **Attacker Machine**  
-  - Kali Linux (Static IP: `192.168.1.2`)  
+  - Kali Linux (Static IP: `192.168.10.250`)  
   - Used for brute force and penetration testing activities.
 
----
+<br>
 
 ## `Step 2` Building the Diagram in Draw.io
 
@@ -58,7 +60,7 @@ In `Part 1` of the **Active Directory Project**, we’re laying the groundwork b
 
 Once all connections and annotations are complete, save the diagram to refer to as we move forward.
 
----
+<br>
 
 ## Conclusion
 
@@ -67,4 +69,4 @@ In Part 1, we established:
 - **A detailed network diagram** with all required components.
 - **IP assignments and roles** for each component in the lab environment.
 
-In **Part 2**, we’ll move on to installing VirtualBox and setting up each virtual machine to build out our lab infrastructure.
+In [**`Part 2`**](Part-2.md), we’ll move on to installing VirtualBox and setting up each virtual machine to build out our lab infrastructure.

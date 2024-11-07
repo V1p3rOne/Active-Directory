@@ -24,15 +24,20 @@ In `Part 5` of the **Active Directory Project**, you will simulate an attack usi
 ## `Step 2` Install Crowbar for Brute Force Attack
 
 1. Install **Crowbar**, a brute force tool:
+
    ```bash
    sudo apt-get install crowbar -y
    ```
+
 2. Navigate to the **rockyou** wordlist:
+
    ```bash
    cd /usr/share/wordlists/
    sudo gunzip rockyou.txt.gz
    ```
+
 3. Copy the **rockyou.txt** file to a new project directory:
+
    ```bash
    mkdir ~/ad-project
    cp rockyou.txt ~/ad-project/passwords.txt
@@ -47,24 +52,31 @@ In `Part 5` of the **Active Directory Project**, you will simulate an attack usi
 ## `Step 4` Run Crowbar Brute Force Attack
 
 1. On Kali Linux, enter the following Crowbar command to start a brute force attack on RDP:
+
    ```bash
    crowbar -b rdp -u TSmith -C ~/ad-project/passwords.txt -s 192.168.1.10/32
    ```
+
 2. This command will try each password in `passwords.txt` against the **TSmith** user on the Windows target machine, simulating a brute force attempt.
+
+![S2](../Assets/02_Images/Part-2/2024-11-07_02h43_21.png)
 
 ## `Step 5` Analyze Brute Force Activity in Splunk
 
 1. Open Splunk, navigate to **Search & Reporting**, and search for recent failed logon events.
 2. Search using:
+
    ```spl
    index="endpoint" "T Smith" 
    ```
+
 3. Look for **Event Code 4625** (failed logons) and **Event Code 4624** (successful logon) to analyze brute force indicators.
 
 ## `Step 6` Install and Configure Atomic Red Team
 
 1. Open PowerShell as an administrator on the Windows target machine.
 2. Run the following to bypass execution policy and download Atomic Red Team:
+
    ```powershell
    Set-ExecutionPolicy Bypass -Scope CurrentUser
    iwr -Uri https://path-to-atomic-red-team -OutFile C:\AtomicRedTeam.zip
@@ -72,19 +84,25 @@ In `Part 5` of the **Active Directory Project**, you will simulate an attack usi
    ```
 
 ### Exclude Atomic Red Team from Windows Defender
+
 1. Open **Windows Security > Virus & Threat Protection > Manage Settings**.
 2. Add an exclusion for the **C:\AtomicRedTeam** folder to prevent Defender from blocking tests.
 
 ## `Step 7` Run Atomic Red Team Tests and Verify in Splunk
 
 1. Use PowerShell to initiate a specific test (e.g., create a new user):
+
    ```powershell
    Invoke-AtomicTest T1116
    ```
+
 2. Go to Splunk and search for telemetry data related to this activity:
+
    ```spl
    index="endpoint" "T1116"
    ```
+
+![S7](../Assets/02_Images/Part-2/2024-11-07_09h27_15.png)
 
 ## Conclusion
 

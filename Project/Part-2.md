@@ -1,6 +1,6 @@
 # `Part 2` Project Setup and Diagram Design
 
-In `Part 2` of the **Active Directory project**, we'll bring our lab environment to life by setting up **virtual machines for Active Directory, Splunk, and client devices**. This section covers installing operating systems, configuring network settings, and preparing the Active Directory domain controller. By the end, our lab will be fully operational and ready for hands-on security and monitoring activities.
+In **`Part 2`** of the **Active Directory project**, we'll bring our lab environment to life by setting up **virtual machines for Active Directory, Splunk, and client devices**. This section covers installing operating systems, configuring network settings, and preparing the Active Directory domain controller. By the end, our lab will be fully operational and ready for hands-on security and monitoring activities.
 
 ### Prerequisites
 
@@ -8,18 +8,22 @@ In `Part 2` of the **Active Directory project**, we'll bring our lab environment
 2. **Virtualization**<br>Install [VirtualBox](https://www.virtualbox.org/) (version 7.0 or above).
 3. **System**<br>If using an M1/M2 Mac, consider using cloud providers like Vulture or Microsoft Azure for compatibility.
 
+<br>
+
 ## `Step 1` Install VirtualBox
 
 1. Visit [virtualbox.org](https://www.virtualbox.org/).
 2. Download the installer for your OS and verify the SHA-256 checksum:
-   - **On Windows**: Open PowerShell in the Downloads folder.
-   - Run: `Get-FileHash .\yourdownloadedfile.iso` and confirm it matches the provided checksum.
+   - **On Windows** Open PowerShell in the Downloads folder.
+   - **Run** `Get-FileHash .\yourdownloadedfile.iso` and confirm it matches the provided checksum.
 
 3. Install VirtualBox:
    - **If prompted**, install the Microsoft Visual C++ 2019 package dependency.
    - Follow on-screen instructions and set default installation options.
 
 ![S1](../Assets/02_Images/Part-2/P1_Tut-1.png)
+
+<br>
 
 ## `Step 2` Download and Create Windows 10 VM
 
@@ -82,12 +86,13 @@ In `Part 2` of the **Active Directory project**, we'll bring our lab environment
 
 1. **Log into Ubuntu** with the username and password you created.
 2. Run the following commands to update:
+
    ```bash
    sudo apt-get update
    sudo apt-get upgrade -y
    ```
 
-
+<br>
 
 ## Conclusion
 
@@ -97,4 +102,4 @@ By completing Part 2, you now have the following setup
 - **Virtual Machines**<br>Created for Windows 10, Kali Linux, Windows Server 2022, and Ubuntu Server.
 - **Operating Systems**<br>Installed and set up on each VM.
 
-In **Part 3**, we will install and configure Sysmon and Splunk on the Windows target machine and server to enable telemetry collection and log forwarding.
+In [**Part 3**](Part-3.md), we will install and configure Sysmon and Splunk on the Windows target machine and server to enable telemetry collection and log forwarding.

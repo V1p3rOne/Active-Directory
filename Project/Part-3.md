@@ -27,6 +27,8 @@ In `Part 3` of the **Active Directory Project**, we’ll install and configure *
    sudo netplan apply
    ```
 
+![S2](../Assets/02_Images/Part-2/2024-11-06_21h27_31.png)
+
 ## `Step 3` Install Splunk Enterprise on the Splunk Server
 
 1. **Transfer the DEB package** to the Splunk VM and install:
@@ -43,6 +45,8 @@ In `Part 3` of the **Active Directory Project**, we’ll install and configure *
    .\sysmon.exe -accepteula -i sysmonconfig.xml
    ```
 
+![alt text](../Assets/02_Images/Part-2/2024-11-06_22h44_17.png)
+
 ## `Step 5` Install and Configure Splunk Universal Forwarder
 
 1. Install **Splunk Universal Forwarder** on the Windows target machine.
@@ -53,8 +57,6 @@ In `Part 3` of the **Active Directory Project**, we’ll install and configure *
 3. Specify the IP and port of the Splunk server (e.g., `9997` for forwarding logs) and save.
 
 4. Restart the **Splunk Forwarder** service.
-
----
 
 ## Conclusion
 

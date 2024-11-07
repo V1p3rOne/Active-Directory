@@ -52,6 +52,9 @@ In `Part 4` of the **Active Directory Project**, we’ll install Active Director
 4. Enter the **Administrator credentials** for the server when prompted.
 5. Restart the machine, then log in with a domain user account (e.g., `jsmith`).
 
+
+![S5](../Assets/02_Images/Part-2/2024-11-07_00h01_54.png)
+
 ## Conclusion
 
 By completing Part 4, you now have:
