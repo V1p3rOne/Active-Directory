@@ -101,4 +101,4 @@ This work is licensed under the [Creative Commons Attribution-NonCommercial-Shar
 
 <!-- License Badge -->
 [license-shield]: https://img.shields.io/github/license/V1p3rOne/Active-Directory?style=flat&label=License&labelColor=180D3F&color=FF5A5F
-[license-url]: https://github.com/V1p3rOne/Active-Directory/blob/main/LICENSE
+[license-url]: https://github.com/V1p3rOne/Active-Directory/blob/main/License
